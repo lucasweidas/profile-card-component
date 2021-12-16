@@ -98,12 +98,6 @@ body {
     padding: 1.5rem 0.5rem;
 }
 
-.social-container .social__title {
-    font-size: 0.7rem;
-    letter-spacing: 0.1rem;
-    color: var(--clr-dark-grayish-blue);
-}
-
 .social-container::before {
     content: "";
     display: block;
@@ -120,7 +114,9 @@ body {
 }
 
 .social__title {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    color: var(--clr-dark-grayish-blue);
 }
 
 /********************************/
