@@ -72,21 +72,23 @@ body {
     display: inline-block;
 }
 
-.user__name {
-    margin-inline-end: 0.3rem;
-}
-
 .user__name,
 .social__number {
+    font-size: 1.125rem;
     font-weight: 700;
     color: var(--clr-very-dark-desaturated-blue);
 }
 
-.user__location,
-.social__title {
+.user__age {
+    font-weight: 400;
+    margin-inline-start: 0.3rem;
+}
+
+.user__location {
     font-size: 0.9rem;
     color: var(--clr-dark-grayish-blue);
 }
+
 
 .social-container {
     display: flex;
@@ -94,6 +96,12 @@ body {
     gap: 2rem;
     position: relative;
     padding: 1.5rem 0.5rem;
+}
+
+.social-container .social__title {
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    color: var(--clr-dark-grayish-blue);
 }
 
 .social-container::before {
