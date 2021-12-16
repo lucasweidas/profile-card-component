@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/********************************/
+/* Variables */
+
+:root {
+    --clr-dark-cyan: hsl(185, 75%, 39%);
+    --clr-very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --clr-dark-grayish-blue: hsl(227, 10%, 46%);
+    --clr-dark-gray: hsl(0, 0%, 59%);
+
+    --font-default: 'Kumbh Sans', sans-serif;
+}
+
+/********************************/
+/* General Styles */
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr;
+    place-items: center;
+    font-family: var(--font-default);
+    background: url("../images/bg-pattern-top.svg") bottom 40vh right 45vw no-repeat, url("../images/bg-pattern-bottom.svg") top 35vh left 45vw no-repeat var(--clr-dark-cyan);
+}
+
+@media (min-width: 600px) {
+    body {
+        background: url("../images/bg-pattern-top.svg") bottom 40vh right 50vw no-repeat, url("../images/bg-pattern-bottom.svg") top 45vh left 45vw no-repeat var(--clr-dark-cyan);
+    }
+}
+
+/********************************/
+/* Card Container */
+
+.card-container {
+    width: 310px;
+    margin: 0 auto;
+    background: #ffffff url("../images/bg-pattern-card.svg") top / contain no-repeat;
+    font-size: 1.125rem;
+    border-radius: 15px;
+    padding-top: 4.5rem;
+}
+
+.user-container {
+    text-align: center;
+    color: var(--clr-dark-grayish-blue);
+    margin-bottom: 1.5rem;
+}
+
+.user__img {
+    display: block;
+    margin: 0 auto 1rem;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+}
+
+.user-info {
+    margin-bottom: 0.5rem;
+}
+
+.user-info > * {
+    display: inline-block;
+}
+
+.user__name {
+    margin-inline-end: 0.3rem;
+}
+
+.user__name,
+.social__number {
+    font-weight: 700;
+    color: var(--clr-very-dark-desaturated-blue);
+}
+
+.user__location,
+.social__title {
+    font-size: 0.9rem;
+    color: var(--clr-dark-grayish-blue);
+}
+
+.social-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    padding: 1.5rem 0.5rem;
+}
+
+.social-container::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: 0;
+    left: 0;
+    background-color: hsla(0, 0%, 59%, 0.3);
+}
+
+.social-info {
+    text-align: center;
+}
+
+.social__title {
+    font-size: 0.8rem;
+}
+
+/********************************/
+/* Attribution */
+
+.attribution {
+    padding: 2rem;
+    text-align: center;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--clr-very-dark-desaturated-blue);
+}
+
+.attribution a:hover,
+.attribution a:focus-within {
+    text-decoration: underline;
+}
